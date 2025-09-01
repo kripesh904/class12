@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Computer - Class 12</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+      <div class="menu">
+        <a id="menu-title" href="../index.html">Home</a>
+        <a href="../syllabus.html">
+            <div class="menu-items">Syllabus</div>
+        </a>
+        <a  id="pagein" href="chap1.html">
+            <div class="menu-items">DBMS</div>
+        </a>
+        <a href="chap1q.html">
+            <div class="menu-items">DBMS - Q</div>
+        </a>
+        <a href="chap2.html">
+            <div class="menu-items">C</div>
+        </a>
+        <a href="chap2q.html">
+            <div class="menu-items">C - Q</div>
+        </a>
+    </div>
+    <div class="content">
+        <h1 id="content_title">Unit 1: Database Management System</h1>
+
+        <h2>Data, Information, Features of Information</h2>
+        <p><b>Data</b> refers to raw facts and figures without context. Examples: numbers, text, dates.</p>
+        <p><b>Information</b> is processed, meaningful data that aids decision making.</p>
+        <h3>Features of Information</h3>
+        <ul>
+            <li><b>Accuracy:</b> Information must be correct and free of errors.</li>
+            <li><b>Relevance:</b> Information should be applicable to the problem at hand.</li>
+            <li><b>Timeliness:</b> Information must be available when needed.</li>
+            <li><b>Completeness:</b> Information should be complete without missing parts.</li>
+            <li><b>Understandability:</b> Information should be clear and easy to interpret.</li>
+        </ul>
+
+        <h2>Database and its Purpose</h2>
+        <p>A <b>database</b> is a structured collection of related data stored electronically.</p>
+        <p><b>Purpose:</b> To store data efficiently, reduce redundancy, ensure data integrity, and enable easy retrieval and manipulation.</p>
+
+        <h2>Terminologies in Database</h2>
+        <ul>
+            <li><b>Table:</b> Collection of related data organized in rows and columns.</li>
+            <li><b>Field:</b> A single attribute or column in a table.</li>
+            <li><b>Record:</b> A single row in a table representing one entity.</li>
+            <li><b>Tuple:</b> Another name for a record in relational databases.</li>
+            <li><b>Object:</b> Data with associated behavior in object-oriented databases.</li>
+            <li><b>Keys:</b> Attributes used to uniquely identify records (e.g., Primary Key, Foreign Key).</li>
+        </ul>
+
+        <h2>Data Types</h2>
+        <p>Data types define the kind of data a field can hold.</p>
+        <ul>
+            <li><b>Integer:</b> Whole numbers.</li>
+            <li><b>Float/Double:</b> Decimal numbers.</li>
+            <li><b>Char:</b> Single characters.</li>
+            <li><b>Varchar:</b> Variable-length strings.</li>
+            <li><b>Date/Time:</b> Dates or timestamps.</li>
+        </ul>
+
+        <h2>Data Dictionary</h2>
+        <p>A repository that stores metadata about database objects (tables, columns, constraints).</p>
+        <p>It helps the DBMS manage the database structure and enforces integrity constraints.</p>
+
+        <h2>Database Management System (DBMS)</h2>
+        <h3>Introduction</h3>
+        <p>DBMS is software that manages databases and provides an interface between users/applications and the data.</p>
+
+        <h3>Objectives</h3>
+        <ul>
+            <li>Efficient data storage and retrieval.</li>
+            <li>Data integrity and security.</li>
+            <li>Concurrent access for multiple users.</li>
+            <li>Backup and recovery management.</li>
+        </ul>
+
+        <h3>Advantages</h3>
+        <ul>
+            <li>Reduces data redundancy.</li>
+            <li>Improves data sharing.</li>
+            <li>Enforces data integrity.</li>
+            <li>Provides data security.</li>
+        </ul>
+
+        <h3>Disadvantages</h3>
+        <ul>
+            <li>High initial cost.</li>
+            <li>Complex to design and maintain.</li>
+            <li>Requires specialized personnel.</li>
+        </ul>
+
+        <h2>Types of Database Models</h2>
+
+        <h3>Hierarchical Model</h3>
+        <p>Data is organized in a tree-like structure with one-to-many relationships.</p>
+
+        <h3>Network Model</h3>
+        <p>Data organized as a graph supporting many-to-many relationships.</p>
+
+        <h3>Relational Model</h3>
+        <p>Data stored in tables with rows and columns, related by keys.</p>
+
+        <h3>Entity-Relationship Model</h3>
+        <p>Conceptual design using entities, attributes, and relationships to model real-world objects.</p>
+
+        <h2>Integrity Constraints and Types</h2>
+
+        <h3>Domain Constraints</h3>
+        <p>Specify the permissible values for a field (data type, range).</p>
+
+        <h3>Entity Integrity</h3>
+        <p>Primary key must be unique and not null.</p>
+
+        <h3>Referential Integrity</h3>
+        <p>Foreign keys must correctly reference primary keys in related tables.</p>
+
+        <h3>Key Constraints</h3>
+        <p>Enforce uniqueness and identify records.</p>
+
+        <h2>Normalization</h2>
+
+        <h3>Introduction</h3>
+        <p>Process to organize tables to reduce redundancy and dependency.</p>
+
+        <h3>Normal Forms</h3>
+        <ul>
+            <li><b>1NF:</b> Atomic values, no repeating groups.</li>
+            <li><b>2NF:</b> 1NF + all non-key attributes fully dependent on primary key.</li>
+            <li><b>3NF:</b> 2NF + no transitive dependency.</li>
+        </ul>
+
+        <h3>Advantages</h3>
+        <ul>
+            <li>Reduces data redundancy.</li>
+            <li>Improves data integrity.</li>
+            <li>Simplifies database maintenance.</li>
+        </ul>
+
+        <h3>Disadvantages</h3>
+        <ul>
+            <li>May require complex queries.</li>
+            <li>Multiple table joins can reduce performance.</li>
+        </ul>
+
+        <h2>Centralized and Distributed Database</h2>
+
+        <h3>Introduction</h3>
+        <p><b>Centralized Database:</b> Stored and managed at a single physical location.</p>
+        <p><b>Distributed Database:</b> Data is distributed across multiple locations connected via a network.</p>
+
+        <h3>Advantages of Centralized Database</h3>
+        <ul>
+            <li>Simple management.</li>
+            <li>Data consistency.</li>
+            <li>Centralized security.</li>
+        </ul>
+
+        <h3>Disadvantages of Centralized Database</h3>
+        <ul>
+            <li>Single point of failure.</li>
+            <li>Slower access for remote users.</li>
+            <li>Scalability issues.</li>
+        </ul>
+
+        <h3>Advantages of Distributed Database</h3>
+        <ul>
+            <li>Improved reliability.</li>
+            <li>Faster local access.</li>
+            <li>Better scalability.</li>
+        </ul>
+
+        <h3>Disadvantages of Distributed Database</h3>
+        <ul>
+            <li>Complex management.</li>
+            <li>Maintaining consistency is harder.</li>
+            <li>Higher implementation cost.</li>
+        </ul>
+
+        <h3>Comparison Table</h3>
+        <div id="comptable">
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>Centralized Database</th>
+                <th>Distributed Database</th>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td>Single location</td>
+                <td>Multiple locations</td>
+            </tr>
+            <tr>
+                <td>Management</td>
+                <td>Simple</td>
+                <td>Complex</td>
+            </tr>
+            <tr>
+                <td>Data Access Speed</td>
+                <td>Slower for remote users</td>
+                <td>Faster locally</td>
+            </tr>
+            <tr>
+                <td>Reliability</td>
+                <td>Single point of failure</td>
+                <td>High fault tolerance</td>
+            </tr>
+            <tr>
+                <td>Cost</td>
+                <td>Lower</td>
+                <td>Higher</td>
+            </tr>
+        </table>
+        </div>
+
+        <h3>Diagram: Centralized vs Distributed Database</h3>
+ <img src="../images/chap1/central-db.jpg" alt="" width="40%">
+        <h2>Database Security</h2>
+
+        <h3>Introduction</h3>
+        <p>Database security protects data from unauthorized access, misuse, or threats.</p>
+
+        <h3>Challenges</h3>
+        <ul>
+            <li>Unauthorized access</li>
+            <li>SQL Injection</li>
+            <li>Data theft</li>
+            <li>Insider threats</li>
+            <li>Physical damage</li>
+        </ul>
+
+        <h3>Security Measures</h3>
+        <ul>
+            <li>User authentication</li>
+            <li>Access control and permissions</li>
+            <li>Encryption of sensitive data</li>
+            <li>Firewalls and intrusion detection</li>
+            <li>Regular backups and audits</li>
+        </ul>
+
+        <h2>DBA and Roles of DBA</h2>
+        <p>The <b>Database Administrator (DBA)</b> is responsible for the overall management and maintenance of the database.</p>
+        <ul>
+            <li>Managing database security.</li>
+            <li>Performance tuning.</li>
+            <li>Backup and recovery.</li>
+            <li>User management and authorization.</li>
+            <li>Ensuring data integrity and availability.</li>
+        </ul>
+
+        <h2>ER Diagrams</h2>
+
+        <h3>Introduction</h3>
+        <p>Entity-Relationship (ER) diagrams visually represent entities, their attributes, and relationships in a database.</p>
+
+        <h3>Components</h3>
+        <ul>
+            <li><b>Entity:</b> Object or thing (represented by a rectangle).</li>
+            <li><b>Attributes:</b> Properties of an entity (represented by ovals).</li>
+            <li><b>Relationships:</b> Associations between entities (represented by diamonds).</li>
+            <li><b>Cardinality:</b> Specifies number of instances in relationship (1:1, 1:N, M:N).</li>
+            <li><b>Degree:</b> Number of entities involved in a relationship.</li>
+        </ul>
+
+        <h3>Common Symbols</h3>
+        <ul>
+            <li>Rectangle - Entity</li>
+            <li>Oval - Attribute</li>
+            <li>Diamond - Relationship</li>
+            <li>Double oval - Multivalued attribute</li>
+            <li>Double diamond - Weak relationship</li>
+            <li>Underline attribute - Primary key</li>
+        </ul>
+ <img src="../images/chap1/er-2.png" alt="" width="40%">
+
+        <h2>SQL (DDL and DML)</h2>
+
+        <h3>Data Definition Language (DDL)</h3>
+        <p>Commands used to define database schema.</p>
+        <pre><code>
+CREATE TABLE Students (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Age INT
+);
+
+ALTER TABLE Students ADD COLUMN Email VARCHAR(100);
+
+DROP TABLE Students;
+        </code></pre>
+
+        <h3>Data Manipulation Language (DML)</h3>
+        <p>Commands used to manipulate data.</p>
+        <pre><code>
+INSERT INTO Students (ID, Name, Age) VALUES (1, 'Alice', 20);
+
+UPDATE Students SET Age = 21 WHERE ID = 1;
+
+DELETE FROM Students WHERE ID = 1;
+
+SELECT * FROM Students;
+        </code></pre>
+
+        <h2>Data Constraints</h2>
+        <ul>
+            <li><b>NOT NULL:</b> Field must have a value.</li>
+            <li><b>UNIQUE:</b> Field value must be unique.</li>
+            <li><b>PRIMARY KEY:</b> Uniquely identifies each record.</li>
+            <li><b>AUTO_INCREMENT:</b> Automatically increments numeric value.</li>
+        </ul>
+
+        <h2>Operators</h2>
+        <ul>
+            <li><b>AND:</b> Both conditions must be true.</li>
+            <li><b>OR:</b> At least one condition must be true.</li>
+            <li><b>NOT:</b> Negates a condition.</li>
+        </ul>
+
+        <h2>WHERE Clause</h2>
+        <p>Used to filter records.</p>
+        <pre><code>
+SELECT * FROM Students WHERE Age &gt; 18 AND Name LIKE 'A%';
+        </code></pre>
+
+        <h2>ORDER BY Clause</h2>
+        <p>Sorts the result set.</p>
+        <pre><code>
+SELECT * FROM Students ORDER BY Name ASC;
+        </code></pre>
+
+        <h2>SQL JOINs</h2>
+        <p>Used to combine rows from two or more tables.</p>
+
+        <h3>INNER JOIN</h3>
+        <pre><code>
+SELECT Students.Name, Courses.CourseName
+FROM Students
+INNER JOIN Enrollments ON Students.ID = Enrollments.StudentID
+INNER JOIN Courses ON Enrollments.CourseID = Courses.ID;
+        </code></pre>
+
+        <h3>LEFT JOIN</h3>
+        <pre><code>
+SELECT Students.Name, Courses.CourseName
+FROM Students
+LEFT JOIN Enrollments ON Students.ID = Enrollments.StudentID
+LEFT JOIN Courses ON Enrollments.CourseID = Courses.ID;
+        </code></pre>
+
+        <h3>RIGHT JOIN</h3>
+        <pre><code>
+SELECT Students.Name, Courses.CourseName
+FROM Students
+RIGHT JOIN Enrollments ON Students.ID = Enrollments.StudentID
+RIGHT JOIN Courses ON Enrollments.CourseID = Courses.ID;
+        </code></pre>
+
+        <h3>FULL JOIN</h3>
+        <pre><code>
+SELECT Students.Name, Courses.CourseName
+FROM Students
+FULL OUTER JOIN Enrollments ON Students.ID = Enrollments.StudentID
+FULL OUTER JOIN Courses ON Enrollments.CourseID = Courses.ID;
+        </code></pre>
+
+    </div>
+</body>
+
+</html>
